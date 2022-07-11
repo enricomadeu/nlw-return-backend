@@ -5,6 +5,10 @@ import { SubmitFeedbackUseCase } from './repositories/use-cases/submit-feedback-
 
 export const routes = express.Router();
 
+routes.get('/ping', (req, res) => {
+  res.send('Api is up and running');
+});
+
 routes.post('/feedbacks', async (req, res) => {
 
   const { type, comment, screenshot } = req.body;
