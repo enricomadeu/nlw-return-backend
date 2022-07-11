@@ -5,7 +5,7 @@ import { SubmitFeedbackUseCase } from './repositories/use-cases/submit-feedback-
 
 export const routes = express.Router();
 
-routes.get('/ping', (req, res) => {
+routes.get('/', (req, res) => {
   res.send('Api is up and running');
 });
 
